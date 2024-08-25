@@ -68,7 +68,7 @@ const mixmojiUrl = (r, c) => {
   let padZeros = r < 20220500; // Revisions before 0522 had preceding zeros
   c[0] = c[0].split(/-/g).map(s => padZeros ? s.padStart(4, "0") : s).join("-u");
   c[1] = c[1].split(/-/g).map(s => padZeros ? s.padStart(4, "0") : s).join("-u");
-  return `wsrv.nl/?url=https://wsrv.nl/?url=https://www.gstatic.com/android/keyboard/emojikitchen/${r}/u${c[0]}/u${c[0]}_u${c[1]}.png`
+  return `https://wsrv.nl/?url=https://wsrv.nl/?url=https://www.gstatic.com/android/keyboard/emojikitchen/${r}/u${c[0]}/u${c[0]}_u${c[1]}.png`
 }
 
 const copyToClipboard = async (e) => {
