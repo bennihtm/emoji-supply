@@ -5,7 +5,7 @@ function decodePrettyComponent(s) {
 
 const emojiUrl = (codePoint) => {
   let cp = codePoint.split("-").filter(x => x !== "fe0f").map(s => s.padStart(4,"0")).join("_");
-  return `https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/png/512/emoji_u${cp}.png`
+  return `https://noto-emoji.bendaha.eu.org/png/512/emoji_u${cp}.png`
 }
 
 const mixmojiUrl = (r, c, proxy, url) => {
